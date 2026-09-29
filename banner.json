@@ -1,0 +1,68 @@
+{
+  "repo": "picokit-48-gateway-dashboard",
+  "eyebrow": "PICOKIT // LESSON 48",
+  "title": "PICOKIT // GATEWAY DASHBOARD",
+  "subtitle": "SENSOR NODE + CHARTED GATEWAY",
+  "accent": "#47FF95",
+  "dim": "#2C9E5C",
+  "white": "#DAF6F0",
+  "cyan": "#7FD8E0",
+  "bg": "#04110A",
+  "bg_edge": "#010502",
+  "icon": "gauge",
+  "panel_status": "CHART  ·  TUI + WEB  ·  AEAD :ON",
+  "chips": [
+    {
+      "label": "TEMP",
+      "value": "23.0 C"
+    },
+    {
+      "label": "HUM",
+      "value": "61.0 %"
+    },
+    {
+      "label": "CHART",
+      "value": "live"
+    },
+    {
+      "label": "RADIO",
+      "value": "-38 dBm"
+    }
+  ],
+  "terminal": [
+    "$ gateway listen /dev/cu.usbserial-A50285BI",
+    "[*] node 00048  seq 14  HEARTBEAT  AEAD ok",
+    "[+] temp 23.0 C  hum 61.0 %  rssi -38  snr 9.0",
+    "[*] tui sparkline  TEMP ..::--==++**",
+    "[+] web charts served on 127.0.0.1:8000"
+  ],
+  "categories": [
+    "SENSOR",
+    "CHART",
+    "SECURE",
+    "LINK"
+  ],
+  "cards": [
+    {
+      "tag": "CLIMATE",
+      "label": "chart",
+      "value": "line"
+    },
+    {
+      "tag": "SIGNAL",
+      "label": "chart",
+      "value": "rssi"
+    },
+    {
+      "tag": "TREND",
+      "label": "summary",
+      "value": "min/max"
+    }
+  ],
+  "footer": [
+    "1 NODE  ·  1 GATEWAY  ·  TUI + WEB CHARTS  ·  NO PLAINTEXT",
+    "PICOKIT SERIES  ·  OUTPUT  ·  INPUT  ·  RADIO  ==[ DASHBOARD ]=="
+  ],
+  "layout": "terminal",
+  "stat": "23.0 C"
+}
